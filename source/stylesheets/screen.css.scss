@@ -58,7 +58,7 @@ html, body {
   left: 0;
   bottom: 0;
   width: $nav-width;
-  background-color: $nav-bg;
+  background-color: #F6F9FBDD;
   font-size: 13px;
   font-weight: bold;
   padding: 30px 0 0 10px;
@@ -77,14 +77,16 @@ html, body {
     display: block;
     max-width: 70%;
     margin-bottom: $logo-margin;
+    margin-left: 20px;
   }
 
   &>.search {
     position: relative;
 
     input {
-      background: #f9f9f9;
+      background: #ffffff;
       border-width: 0 0 1px 0;
+      border-radius: 5px;
       border-color: $search-box-border-color;
       padding: 6px 20px 6px 30px;
       box-sizing: border-box;
@@ -156,6 +158,7 @@ html, body {
   .toc-link.active {
     background-color: $color-primary;
     color: $nav-active-text;
+    border-radius: 3px;
   }
 
   // this is parent links of the currently selected ToC entry
@@ -167,6 +170,7 @@ html, body {
   .toc-list-h2 {
     display: none;
     background-color: $nav-subitem-bg;
+    border-radius: 5px;
     font-weight: 500;
   }
 
@@ -275,7 +279,8 @@ html, body {
   .lang-selector {
     position: fixed;
     z-index: 50;
-    border-bottom: 5px solid $lang-select-active-bg;
+    border-bottom: 3px solid #e9e9e9;
+    border-radius: 3px;
   }
 }
 
@@ -354,7 +359,8 @@ html, body {
     padding-bottom: 0.5em;
     margin-bottom: $h1-margin-bottom;
     margin-top: 2em;
-    border-top: 3px solid #38c5ea;
+    border-top: 5px solid #38c5ea;
+    border-radius: 5px;
     border-bottom: 1px solid rgb(246, 246, 246);
     background-color: #ffffff;
   }
@@ -369,7 +375,9 @@ html, body {
     font-size: 19px;
     margin-top: 4em;
     margin-bottom: 0;
-    border-top: 1px solid rgb(240, 240, 240);
+    width: 55%;
+    border-top: 2px solid #38c5ea;
+    border-radius: 1px;
     padding-top: 1.2em;
     padding-bottom: 1.2em;
     background-image: linear-gradient(to bottom, rgba(#fff, 0.2), rgba(#fff, 0));
@@ -390,7 +398,7 @@ html, body {
   }
 
   h4, h5, h6 {
-    font-size: 10px;
+    font-size: 15px;
   }
 
   hr {
@@ -414,7 +422,7 @@ html, body {
     th {
       background-color: rgba(215, 215, 215, 0.066);
       padding: 5px 10px;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid #d1d1d1;
       vertical-align: bottom;
     }
 
@@ -526,12 +534,13 @@ html, body {
     color: #fff;
 
     margin: 0;
-    width: $examples-width;
+    width: 40%;
 
     float:right;
     clear:right;
 
     box-sizing: border-box;
+    border-radius: 5px;
 
     @extend %right-col;
 
